@@ -3,7 +3,7 @@ package com.exerciting.FipeTableConsult.models;
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
-public record MarcasData(@JsonAlias("codigo")Integer id,
-                         @JsonAlias("nome")String marca) {
+public record ModelsData (List<IdentifyData> modelos) {
 }
